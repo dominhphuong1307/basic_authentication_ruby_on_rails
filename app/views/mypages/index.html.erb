@@ -1,0 +1,21 @@
+<h1>THI BANG LAI XE </h1>
+<p>Find me in app/views/mypages/index.html.erb</p>
+
+
+
+
+<%if user_signed_in? %>
+
+    <%= link_to  "Profile User", user_path(@users) %>
+    <%= link_to  "Edit User", edit_user_path(@users) %>
+    <%= link_to  "Logt Out", destroy_user_session_path, method: :delete %>
+
+<%else %>
+<div > 
+    <%= link_to  "Sign up", new_user_registration_path %>
+</div>
+
+<div>
+    <%= link_to  "Sign in", new_user_session_path %>
+</div>
+<%end %>

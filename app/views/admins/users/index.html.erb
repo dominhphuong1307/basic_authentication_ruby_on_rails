@@ -1,0 +1,7 @@
+<h1>All User</h1>
+ <% @user.each do |user| %>
+    <strong>Email: </strong><%= user.email %><br>
+ <% end %>
+
+ <%= link_to  "Log Out ", admins_logout_path, method: :delete %>
+ 
