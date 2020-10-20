@@ -5,10 +5,13 @@ Rails.application.routes.draw do
   resources :users
 
   namespace :admins do
+    root to: "sessions#new"
+    get "home" => "homes#index"
     get "login" => "sessions#new"
     post "login" => "sessions#create"
     delete "logout" => "sessions#destroy"
     resources :users
+    resources :questions, only: [:new, :create,:show]
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

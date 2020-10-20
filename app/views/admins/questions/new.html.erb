@@ -1,0 +1,13 @@
+<%= form_for @question,url: admins_questions_path do |f| %>
+<h3>Question</h3>
+<div class = "field">
+  <%= f.label :content, "Question" %>
+  <%= f.text_field :content %>
+  <%= f.check_box :isparamly %>
+</div>
+<h3>Answer</h3>
+    <%= f.fields_for :answers do |answer| %>
+    <%= render 'answer_fields',f: answer %>
+    <% end %>
+  <%= f.submit %>
+<% end %>

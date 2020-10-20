@@ -25,6 +25,9 @@ gem 'devise'
 gem 'bootstrap'
 gem "nested_form"
 gem 'pry'
+gem "cocoon"
+gem "carrierwave"
+gem 'jquery-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

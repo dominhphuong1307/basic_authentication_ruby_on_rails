@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require cocoon
 //= require_tree .
+"use strict";
