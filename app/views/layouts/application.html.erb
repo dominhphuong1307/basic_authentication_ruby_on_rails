@@ -10,9 +10,28 @@
   </head>
 
   <body>
+      <%# Navigation %>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Thi Bang Lai Xe</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="<%=  %>">Profile</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      <%# Notice %>
   <div class="container-fluid">
     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <p class="alert"><% flash.each do |type, msg| %>
+        <div><%= msg %></div>
+        <%end %>
+    </p>
   </div>
 
   <div class="container">
