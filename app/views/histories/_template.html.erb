@@ -1,0 +1,20 @@
+<div class="history">
+  <h1>RESULT DETAIL</h1>
+<form>
+<div class = "information">
+  <h3>UserName: <%= @history.user.username %></h3>
+  <h3>Email: <%= @history.user.email%>
+  <h3>Phone: <%= @history.user.phone%>
+  <h3>Address: <%= @history.user.address%>
+  <h3>NGÀY: <%= @history.test_time.strftime("%B %d, %Y") %></h3>
+  <h3>Score: <%= @history.score %></h3>
+  </div>
+  <div class = "result">
+    <%if @history.status == true%>
+    <h3> Result: Pass </h3>
+    <%else%>
+    <h3> Result: Fail </h3>
+    <%end%>
+  </div>
+<form>
+</div>

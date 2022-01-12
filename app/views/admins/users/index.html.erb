@@ -2,6 +2,8 @@
  <% @user.each do |user| %>
     <strong>Email: </strong><%= user.email %><br>
  <% end %>
-
- <%= link_to  "Log Out ", admins_logout_path, method: :delete %>
+<br>
+<h1><%= t".title" %></h1><br>
+<%= link_to t(".link_export"), admins_users_path(format: :csv), class: "btn btn-primary" %><br><br>
+<%= link_to  "Log Out ", admins_logout_path , class: "btn btn-danger" , method: :delete %>
  

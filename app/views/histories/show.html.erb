@@ -1,0 +1,4 @@
+<%= render "template", history: @history %>
+<%= link_to "Download PDF",
+  history_download_path(@history, format: "pdf"),
+  target: :_blank %>

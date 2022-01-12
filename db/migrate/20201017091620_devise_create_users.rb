@@ -6,7 +6,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       # Add field for User 
       t.string :username 
       t.datetime :birthday
-      t.string :gender
       t.decimal :phone
       t.string :address
 

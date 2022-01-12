@@ -1,0 +1,8 @@
+<h1>Show All Question</h1>
+<% @questions.each do |question| %>
+  <%= link_to  admins_question_path(question) do %>
+    <%= question.content %><br>
+  <%end %>
+<% end %>
+<%= link_to  "back", admins_home_path %>
+

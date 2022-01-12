@@ -30,4 +30,15 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  admins:
+    users:
+      index:
+        link_export: Export Users
+        title: Export CSV
+      header_csv:
+        username: User Name
+        email: Email
+        phone: Phone
+        birthday: Birthday
+        address: Address
+

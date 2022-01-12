@@ -1,0 +1,6 @@
+<%@histories.each  do |history| %>
+<label>STT</label><br>
+<%= link_to history.id, history_path(history.id)%><br>
+<label>UserName</label><br>
+<%= history.user.username%>
+<%end%>

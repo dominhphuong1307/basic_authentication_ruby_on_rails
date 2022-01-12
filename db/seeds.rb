@@ -5,48 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(email: "dominhphuong2208@gmail.com",
-    password: "121212",
-    password_confirmation: "121212"
-   #  birthday: "09/01/1996",
-   #  gender: "Nu",
-   #  phone: "0562361338",
-   #  address: "87/10 Ngu Hanh Son"
-   #  isadmin: "false"
+Admin.create(email: "doanngoctan@gmail.com",
+    password: "123123",
+    password_confirmation: "123123"
 )
-User.create( email: "vohoaithuong@gmail.com",
-             password: "121212",
-             password_confirmation: "121212"
-            #  birthday: "09/01/1996",
-            #  gender: "Nu",
-            #  phone: "0562361338",
-            #  address: "87/10 Ngu Hanh Son"
-            #  isadmin: "false"
+User.create(email: "tanoffer12@gmail.com",
+    password: "123123",
+    password_confirmation: "123123"
 )
-User.create(email: "dominhhieu@gmail.com",
-    password: "121212",
-    password_confirmation: "121212"
-   #  birthday: "09/01/1996",
-   #  gender: "Nu",
-   #  phone: "0562361338",
-   #  address: "87/10 Ngu Hanh Son"
-   #  isadmin: "false"
-)
-User.create( email: "dominhphuong@gmail.com",
-    password: "121212",
-    password_confirmation: "121212"
-   #  birthday: "09/01/1996",
-   #  gender: "Nu",
-   #  phone: "0562361338",
-   #  address: "87/10 Ngu Hanh Son"
-   #  isadmin: "false"
-)
-User.create( email: "dominhphuong1@gmail.com",
-    password: "121212",
-    password_confirmation: "121212"
-   #  birthday: "09/01/1996",
-   #  gender: "Nu",
-   #  phone: "0562361338",
-   #  address: "87/10 Ngu Hanh Son"
-   #  isadmin: "false"
+History.create(
+    user_id: 1,
+    score: 80,
+    test_time: "12/10/2020",
+    status: true
 )
